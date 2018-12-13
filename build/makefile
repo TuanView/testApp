@@ -27,7 +27,8 @@ Test: $(BIN)/testHello
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS) $(C_DEPS) $(EXECUTABLES) $(BINS)
+	-$(RM) $(OBJS) $(C_DEPS) $(EXECUTABLES) $(BINS) 
+	mkdir -p $(BIN)
 	-@echo ' '
 
 cleanRelease:
